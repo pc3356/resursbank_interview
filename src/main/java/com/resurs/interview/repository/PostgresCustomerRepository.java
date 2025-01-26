@@ -7,20 +7,20 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpServerErrorException;
 
 //fixme
-public class PostgresCustomerRepository implements CustomerRepository {
+public class PostgresCustomerRepository { //implements CustomerRepository {
 
-    @Override
-    public Optional<Customer> findBySocialSecurityNumber(String ssn) {
-        throw new RuntimeException("Not Implemented");
-    }
-
-    @Override
-    public Customer save(Customer customer) {
-        throw new RuntimeException("Not Implemented");
-    }
-
-    @Override
-    public Optional<Customer> findById(Long customerId) {
-        return Optional.empty();
-    }
+//    @Override
+//    public Optional<Customer> findBySocialSecurityNumber(String ssn) {
+//        throw new RuntimeException("Not Implemented");
+//    }
+//
+//    @Override
+//    public Customer save(Customer customer) {
+//        throw new RuntimeException("Not Implemented");
+//    }
+//
+//    @Override
+//    public Optional<Customer> findById(Long customerId) {
+//        return Optional.empty();
+//    }
 }

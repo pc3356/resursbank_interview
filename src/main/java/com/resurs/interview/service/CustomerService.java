@@ -37,6 +37,6 @@ public class CustomerService {
 
     private boolean shallWeGiveALoan(int lastYearTax, Integer creditScore) {
         //fixme
-        
+        return false;
     }
 }

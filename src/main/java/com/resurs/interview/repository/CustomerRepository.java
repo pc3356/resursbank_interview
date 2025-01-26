@@ -5,7 +5,8 @@ import com.resurs.interview.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-public interface CustomerRepository {
+@Repository
+public interface CustomerRepository extends JpaRepository<Customer, Long> {
     Optional<Customer> findBySocialSecurityNumber(String ssn);
 
     Customer save(Customer customer);
